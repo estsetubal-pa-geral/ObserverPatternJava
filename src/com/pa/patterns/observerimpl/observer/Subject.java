@@ -8,7 +8,7 @@ import java.util.List;
  *
  * @author patriciamacedo
  */
-public abstract class Subject implements ISubject {
+public abstract class Subject implements Observable {
     private List<Observer> observerList;
 
     public Subject() {

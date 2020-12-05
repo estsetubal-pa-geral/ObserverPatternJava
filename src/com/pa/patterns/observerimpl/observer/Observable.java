@@ -3,7 +3,7 @@ package com.pa.patterns.observerimpl.observer;
  *
  * @author patriciamacedo
  */
-public interface ISubject {
+public interface Observable {
     /**
      *  Attach  observers to the subject.
      * @param observers  to be attached

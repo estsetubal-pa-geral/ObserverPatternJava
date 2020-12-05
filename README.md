@@ -25,17 +25,17 @@ mudança de estado ou de outros eventos ocorridos num outro objecto.
 # Implementação
 
 * Como um dos problemas com este padrão é a classe Subject ser uma classe abstrata e não uma interfce, na implementação 
-apresentada, define-se uma interface ISubject, para dar maior flexibilidade à utilização do padrão
+apresentada, define-se uma interface Observable, para dar maior flexibilidade à utilização do padrão
  
  ```java
-public interface ISubject {
+public interface Observable {
     public void addObservers(Observer... observers);
     public void removeObservers(Observer observer);
     public void notifyObservers(Object obj);
 }
 ```
  ```java
-public abstract class Subject implements ISubject{
+public abstract class Subject implements Observable{
     private List<Observer> observerList;
    
        public Subject() {
