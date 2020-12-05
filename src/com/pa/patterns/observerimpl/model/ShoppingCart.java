@@ -47,5 +47,11 @@ public class ShoppingCart extends Subject {
     public Collection<Product> getProducts() {
         return products;
     }
-    
+
+    public float getTotal() {
+        float total=0.0f;
+        for(Product p: products)
+            total+=p.getCost();
+        return total;
+    }
 }
