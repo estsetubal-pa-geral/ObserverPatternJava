@@ -3,7 +3,7 @@
 1. Possível Implementação
 
     ```java
-        public class ShoppingCartListShow implements Observer {
+        public class ShoppingCartListView implements Observer {
         
             @Override
             public void update(Object arg) {
@@ -28,8 +28,8 @@
     ```
 2. Possível Implementação - alterações na main class
     ```java
-       ShoppingCartListShow show = new ShoppingCartListShow(); // new observer
-       cart2.addObservers(show,cost);// add the observer to cart2
+       ShoppingCartListView listView = new ShoppingCartListView(); // new observer
+       cart2.addObservers(costView, listView);// add the observer to cart2
     ```
 
 3. Possível Implementação
@@ -60,7 +60,7 @@
 
     ```java
     ShoppingCartAllert allert= new ShoppingCartAllert(50);// new observer
-    cart1.addObservers(cost,allert);// add the observer to cart2
+    cart1.addObservers(costView,allert);// add the observer to cart2
     ```
 
 

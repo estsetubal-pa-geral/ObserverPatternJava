@@ -25,11 +25,11 @@ public class Main {
         List<Product> productList= generateProductList();
         ShoppingCart cart1 = new ShoppingCart("Bruno's Cart");
         ShoppingCart cart2 = new ShoppingCart("Susana's Cart");
-        ShoppingCartTotalCost cost = new ShoppingCartTotalCost();
+        ShoppingCartTotalCostView costView = new ShoppingCartTotalCostView();
 
-        cart1.addObservers(cost);
+        cart1.addObservers(costView);
         
-        cart2.addObservers(cost);
+        cart2.addObservers(costView);
         
         cart1.addProduct(productList.get(0));
         cart1.addProduct(productList.get(1));

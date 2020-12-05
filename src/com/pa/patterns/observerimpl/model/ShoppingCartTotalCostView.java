@@ -15,7 +15,7 @@ import java.util.Collection;
  *
  * @author brunomnsilva
  */
-public class ShoppingCartTotalCost  implements Observer {
+public class ShoppingCartTotalCostView implements Observer {
 
  
 

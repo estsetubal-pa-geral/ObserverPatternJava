@@ -87,7 +87,7 @@ carrinho de compras o valor total é atualizado na consola.
 
 # Exercícios
 
-1. Adicione uma nova classe que assume o papel de ConcreteObserver denominada `ShoppingCartShow` que tem como objectivo 
+1. Adicione uma nova classe que assume o papel de ConcreteObserver denominada `ShoppingCartListView` que tem como objectivo 
 imprimir com o seguinte formato a lista de compras.
  Lista Ordenada por IDs dos produtos
  
