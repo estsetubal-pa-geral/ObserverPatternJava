@@ -26,19 +26,15 @@ public class Main {
         ShoppingCart cart1 = new ShoppingCart("Bruno's Cart");
         ShoppingCart cart2 = new ShoppingCart("Susana's Cart");
         ShoppingCartTotalCostView costView = new ShoppingCartTotalCostView();
-
         cart1.addObservers(costView);
-        
         cart2.addObservers(costView);
-        
         cart1.addProduct(productList.get(0));
         cart1.addProduct(productList.get(1));
-        cart1.addProduct(productList.get(2));
+        cart1.addProduct(productList.get(5));
         cart1.removerProduct(productList.get(0));
         cart2.addProduct(productList.get(5));
         cart2.addProduct(productList.get(1));
         cart2.addProduct(productList.get(6));
-
     }
 
     private static List<Product> generateProductList(){

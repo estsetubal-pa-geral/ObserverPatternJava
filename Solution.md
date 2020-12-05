@@ -56,7 +56,7 @@
         }
     ```
 
-2. Possível Implementação - alterações na main class
+4. Possível Implementação - alterações na main class
 
     ```java
     ShoppingCartAllert allert= new ShoppingCartAllert(50);// new observer

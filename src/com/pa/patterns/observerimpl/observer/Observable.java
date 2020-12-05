@@ -15,5 +15,9 @@ public interface Observable {
      */
     public void removeObservers(Observer observer);
 
+    /**
+     * notify all observer
+     * @param object, argument of update method
+     */
     public void notifyObservers(Object object);
 }
