@@ -89,7 +89,7 @@ carrinho de compras o valor total é atualizado na consola.
 
 1. Adicione uma nova classe que assume o papel de ConcreteObserver denominada `ShoppingCartListView` que tem como objectivo 
 imprimir com o seguinte formato a lista de compras.
- Lista Ordenada por IDs dos produtos
+ Lista Ordenada por nome dos produtos
  
  ````
  <shopping cart name>
@@ -98,9 +98,7 @@ imprimir com o seguinte formato a lista de compras.
 
 2. Faça as modificações necessárias no main, para adiconar ao `cart1`, este novo observador.
 
-3. Adicione uma nova classe que assume o papel de ConcreteObserver denominada `ShoppingCartAllert`. Esta classe cada vez 
-   que tem o atributo maxValue. Cada vez que este observador é notificado, verifica se o ultimo produto adicionado
-    tem um valor superior ao máximo e imprime uma mensagem com a seguinte configuração:
+3. Adicione uma nova classe que assume o papel de ConcreteObserver denominada `ShoppingCartAllert`. Esta classe tem o atributo maxValue. Cada vez que este observador é notificado, verifica se o ultimo produto adicionado tem um valor superior ao máximo e imprime uma mensagem com a seguinte configuração:
   ````  
     "ALLERT!!! - The product <productName> has exceeded the maximum value configured <maxValue> 
  ```` 
